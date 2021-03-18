@@ -6,13 +6,18 @@
     <title>Let's party!</title>
 </head>
 <body>
+<header>
 <div class="nav" th:fragment="header">
-    <h1>Car lovers!</h1>
-    <div class="navbuttons">
-        <a class="buttonLook menuButton" th:href="@{/home}">Home</a>
-        <a class="buttonLook menuButton" th:href="@{/merklist}">Merken</a>
-        <a class="buttonLook menuButton" th:href="@{/about}">over ons</a>
-    </div>
+    <h1 class="logo">Car lovers!</h1>
+    <nav>
+
+    <ul class="nav_links">
+       <li> <a  th:href="@{/home}">Home</a> </li>
+        <li>  <a  th:href="@{/merklist}">Merken</a> </li>
+        <li>  <a  th:href="@{/about}">over ons</a> </li>
+    </ul>
+    </nav>
 </div>
+</header>
 </body>
 </html>
