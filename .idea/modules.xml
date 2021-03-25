@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/eigen-app.iml" filepath="$PROJECT_DIR$/.idea/eigen-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eigen app/app-master/party.iml" filepath="$PROJECT_DIR$/eigen app/app-master/party.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eigenapplicatie.iml" filepath="$PROJECT_DIR$/eigenapplicatie.iml" />
     </modules>
   </component>
 </project>
