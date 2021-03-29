@@ -49,8 +49,13 @@ public class HomeController {
         return "merklist";
     }
 
+    @GetMapping("/cardetails")
+    public String carDetails(Model model){
+        return "cardetails";
+    }
+
     @GetMapping("/error")
-    public String error(Model model) {
+    public String error(Model model){
         return "error";
     }
 
