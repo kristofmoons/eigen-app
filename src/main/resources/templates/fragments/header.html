@@ -2,20 +2,34 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}" href="../../static/css/style.css"/>
-    <title>Let's party!</title>
+ <title>Let's party!</title>
 </head>
 <body>
 <header>
-<div class="nav" th:fragment="header">
-    <h1 class="logo">Car lovers!</h1>
-    <nav>
+<div class="navbar-expand-lg sticky-top" th:fragment="header">
 
-    <ul class="nav_links">
-       <li> <a  th:href="@{/home}">Home</a> </li>
-        <li>  <a  th:href="@{/merklist}">Merken</a> </li>
-        <li>  <a  th:href="@{/about}">over ons</a> </li>
-    </ul>
+    <nav class="navbar navbar-light bg-light ">
+      <a class="navbar-brand" th:href="@{/home}">Car Lovers</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">  <a class="nav-link mx-1" th:href="@{/home}">Home</a> </li>
+                <li class="nav-item">  <a class="nav-link mx-1" th:href="@{/merklist}">Merken</a> </li>
+                <li class="nav-item">  <a class="nav-link mx-1" th:href="@{/about}">over ons</a> </li>
+            </ul>
+        </div>
     </nav>
 </div>
 </header>
